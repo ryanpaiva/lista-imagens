@@ -1,0 +1,62 @@
+main {
+    background-color: #d3d3d3;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    font-family: 'Public Sans', sans-serif;
+}
+
+.pinturas {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.pinturas .pintura {
+    width: 335px;
+    height: 431px;
+    position: relative;
+}
+
+.pintura .pintura img {
+    width: 100%;
+}
+
+.pinturas .pintura .informacoes {
+    position: absolute;
+    color: #ffffff;
+    bottom: 60px;
+    left: 25px;
+}
+
+.pinturas .pintura .informacoes .titulo {
+    font-size: 30px;
+    margin-bottom: 8px;
+}
+
+.pinturas .pintura .informacoes .pintor {
+    font-size: 17px;
+    font-weight: 300;
+}
+
+.pinturas .pintura img {
+    transition: 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.pinturas .pintura img:hover {
+    transform: scale(1.1);
+}
+
+.pinturas .pintura .informacoes {
+    transition: 0.3s ease-in-out;
+}
+
+.pinturas .pintura:hover .informacoes {
+    transform: scale(1.1);
+}
